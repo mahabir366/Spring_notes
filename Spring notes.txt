@@ -1,10 +1,33 @@
 06/05/2022 -->
 
 * @SpringBootApplication – used to denote the main class of a Boot Application.
+
 * @EnableEurekaClient - it lives in spring-cloud-netflix and only works for eureka.
+
 * @EnableDiscoveryClient - it lives in spring-cloud-commons and picks the implementation on the classpath. 
+
 * @EnableFeignClients - it enables component scanning for any interfaces that use @FeignClient.
+
 * SpringBootServletInitializer - it  allows us to configure our application when it's run by the servlet container.
+
 * @Override - it denotes that the child class method overrides the base class method.
+
 * SpringApplicationBuilder - Let's say that you have to solve a problem where you need to work with multiple databases or structures and each one needs to be isolated from the other, in that case I would use a SpringApplicationBuilder.
+
 * @Primary - it  give higher preference to a bean when there are multiple beans of the same type.
+
+* @Component - it indicates that a class might be a candidate for creating a bean.
+
+* @Value - it is used to assign default values to variables and method arguments.
+
+* @Autowired - it is to inject the dependancy into a bean(equivalent to ref XML tag/attribute).
+
+* @Bean - it is just for the metadata definition to create the bean(equivalent to tag). 
+
+* Serializable - When your models or entities are meant to travel across several JVM's then you might want to consider implementing Serializable interface. You should do this with caution. You should also provide a a valid UUID for the class to be used during Serialization and vice versa.
+
+* SequenceGenerator - it defines a primary key generator that may be referenced by name when a generator element is specified for the GeneratedValue annotation. 
+
+* @JsonInclude(NON_EMPTY) - it can be used to exclude values that are empty.
+
+* @JsonIgnoreProperties(ignoreUnknown = true), which mean any unknown property in JSON String i.e. any property for which we don't have a corresponding field in the EBook class will be ignored. If you compile and run your program again it will work fine.
