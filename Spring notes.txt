@@ -1,1 +1,10 @@
-A
+06/05/2022 -->
+
+* @SpringBootApplication – used to denote the main class of a Boot Application.
+* @EnableEurekaClient - it lives in spring-cloud-netflix and only works for eureka.
+* @EnableDiscoveryClient - it lives in spring-cloud-commons and picks the implementation on the classpath. 
+* @EnableFeignClients - it enables component scanning for any interfaces that use @FeignClient.
+* SpringBootServletInitializer - it  allows us to configure our application when it's run by the servlet container.
+* @Override - it denotes that the child class method overrides the base class method.
+* SpringApplicationBuilder - Let's say that you have to solve a problem where you need to work with multiple databases or structures and each one needs to be isolated from the other, in that case I would use a SpringApplicationBuilder.
+* @Primary - it  give higher preference to a bean when there are multiple beans of the same type.
